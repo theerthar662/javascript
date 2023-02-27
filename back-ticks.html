@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Template Literals</h2>
+
+<p>Template literals use back-ticks (``) to define a string:</p>
+
+<p id="demo"></p>
+<p>Template literals allows variables in strings:</p>
+<p id="demo2"></p>
+
+
+
+<script>
+    //Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+let text = `Hello world!`;
+document.getElementById("demo").innerHTML = text;
+
+//Template literals allow variables in strings
+let firstName="John";
+let lastName="Smith"
+let name = `Welcome ${firstName}, ${lastName}!`;
+document.getElementById("demo2").innerHTML = name;
+</script>
+
+</body>
+</html>

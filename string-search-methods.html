@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<body>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The indexOf() Method</h2>
+    
+    <p>The position of the first occurrence of "locate" is:</p>
+    <p id="demo1"></p>
+    <p><p>Return the position of the last occurrence of a specified text:</p></p>
+    <p id="demo2"></p>
+
+    <h2>The includes() Method</h2>
+    <p>Check if a string includes "world":</p>
+    <p id="demo3"></p>
+
+    <h2>The startsWith() Method</h2>
+    <p>Check if a string starts with "Hello":</p>
+    <p id="demo4"></p>
+
+
+    <script>
+        let text = "Please locate where 'locate' occurs!";
+        //indexOf() - returns the index of  the first occurrence of a string in a string
+        document.getElementById("demo1").innerHTML = text.indexOf("locate");
+
+        //lastIndexOf() - returns the index of the last occurrence of a specified text in a string
+        //return -1 if the text is not found:
+        document.getElementById("demo2").innerHTML = text.lastIndexOf("locate");
+
+        //The includes() - returns true if a string contains a specified value.
+        let text1 = "Hello world, welcome to the universe.";
+        document.getElementById("demo3").innerHTML = text1.includes("world");
+
+        //The startsWith() - returns true if a string begins with a specified value.
+        document.getElementById("demo4").innerHTML = text1.startsWith("Hello");
+        </script>
+        
+</body>
+</html>

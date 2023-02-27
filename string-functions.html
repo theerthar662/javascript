@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <h2>JavaScript Strings</h2>
+
+        <p><b>1. The length of the string is:</b></p>
+        <p id="demo1"></p>
+
+        <p><b>2. The sliced (extracted) part of the string is</b>:</p>
+         <p id="demo2"></p>
+
+         <p><b>3. The substring() method extract a part of a string and returns the extracted parts in a new string:</b></p>
+         <p id="demo3"></p>
+
+         <p><b>4. Replace JavaScript with HTML</b></p>
+         <button onclick="myFunction()">Try it</button>
+         <p id="demo4">Hello JavaScript!</p>
+
+         <p><b>5. ReplaceAl:{</b></p>
+         <p id="demo5"></p>
+
+         <p><b>6. To UpperCase:</b></p>
+         <p id="demo6"></p>
+
+         <p><b>7. String concat():</b></p>
+         <p id="demo7"></p>
+
+         <p><b>8. JavaScript String trim()</b></p>
+         <p id="demo8"></p>
+
+        <script>
+            let text = "Hello Javascript";
+            //The length property returns the length of a string
+            document.getElementById("demo1").innerHTML=text.length;
+           
+            //slice() extracts a part of a string and returns the extracted part in a new string
+            let part = text.slice(7,13);
+            document.getElementById("demo2").innerHTML = part; 
+            //substring() is similar to slice().
+            document.getElementById("demo3").innerHTML = text.substring(6,16);
+
+            //replace
+            function myFunction(){
+              let str = document.getElementById("demo4").innerHTML;
+              document.getElementById("demo4").innerHTML = str.replace("JavaScript","HTML") 
+            }
+
+            //replaceAll 
+            let a = "I love cats. Cats are very easy to love. Cats are very popular."
+            a = a.replaceAll("Cats","Dogs");
+            a = a.replaceAll("cats","dogs");
+            document.getElementById("demo5").innerHTML = a;
+
+          //toUpperCase
+          let text2= text.toUpperCase();
+          document.getElementById("demo6").innerHTML=text2;
+
+          //concat()- joins two or more strings
+          let t1 = "Hello";
+          let t2 = "World";
+          let t3 = t1.concat(" ",t2);
+          document.getElementById("demo7").innerHTML=t3;
+
+          //The trim() method removes whitespace from both sides of a string
+          let term1 = "     hello world!     ";
+          let term2 = term1.trim();
+          document.getElementById("demo8").innerHTML=
+          "Length term1 = " + term1.length + "<br>Length term2 = " + term2.length;
+
+        </script>
+    </body>
+</html>
